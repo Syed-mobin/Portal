@@ -1,0 +1,278 @@
+
+/* 
+font-family: 'Rubik', sans-serif;
+font-family: 'Roboto Slab', serif;
+*/
+/* reset */
+
+*
+{
+	border: 0;
+	box-sizing: content-box;
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	line-height: 1.1 !important;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	vertical-align: top;
+}
+/* header starts */
+
+/* content editable */
+
+*[contenteditable] { border-radius: 0.25em; min-width: 1em; outline: 0; }
+*[contenteditable] { cursor: pointer; }
+*[contenteditable]:hover, ;
+*[contenteditable]:focus, td:hover; 
+*[contenteditable], td:focus; 
+*[contenteditable], img.hover { background: #DEF; box-shadow: 0 0 1em 0.5em rgb(145, 187, 229); }
+span[contenteditable] { display: inline-block; }
+
+/* heading */
+
+h1 { font-family: 'Rubik', sans-serif; letter-spacing: 0.5em; text-align: center; text-transform: uppercase; }
+
+/* table */
+
+table { font-size: 60%; table-layout: fixed; width: 100%; }	/*table item font size*/
+table { border-collapse: separate; border-spacing: 1px; }  /*space between table rows*/
+th, td { border-width: .1px; padding: 0.5em; position: relative; text-align: left; }	/*table row bodder*/
+th, td { border-radius: 0.25em; border-style: solid; }
+/* table heding colour */
+th { background: rgb(97, 51, 51); border-color: #BBB; }
+td { border-color: rgb(221, 221, 221); }
+
+/* page */
+
+html { font: 17px/1 'Rubik', sans-serif; overflow: auto; padding: auto; }
+html { background: #999; cursor: default; }
+
+/*Adjust the page sized*/
+body { box-sizing: border-box; min-height: 11in; margin: 0 auto; overflow: hidden; padding: 0.5in; }	
+body { background: #FFF; border-radius: 1px; box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5); }
+
+
+
+
+/* header */
+
+header { margin: 0 0 3em; }
+header:after { clear: both; content: ""; display: table; }
+
+header h1 { background: #000; border-radius: 0.25em; color: #FFF; margin: 0 0 1em; padding: 0.5em 0; }
+.address { float: left; font-size: 75%; font-style: normal; line-height: 1.25; margin: 0 1em 1em 0; }
+/* .address p { margin: 0 0 0.25em; } */
+header span, header img { display: block; float: right; }
+header span { margin: 0 0 1em 1em; max-height: 25%; max-width: 60%; position: relative; }
+header img { max-height: 100%; max-width: 100%; }
+header input { cursor: pointer; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; height: 100%; left: 0; opacity: 0; position: absolute; top: 0; width: 100%; }
+
+/* article */
+            /*space between client details and item description*/
+article, article address, table.meta, table.inventory { margin: 0 0 3em; }	
+article:after { clear: both; content: ""; display: table; }
+article h1 { clip: rect(0 0 0 0); position: absolute; }
+
+article address { float: left; font-size: 100%; }
+
+/* table meta & balance */
+
+table.meta, table.balance { float: right; width: 28%; }
+table.meta:after, table.balance:after { clear: both; content: ""; display: table; }
+
+/* table meta */
+
+table.meta th { width: 60%; }
+table.meta td { width: 60%; }
+
+/* table items */
+
+table.inventory { clear: both; width: 100%; }
+table.inventory th { font-weight: 300; text-align: center; }
+
+table.inventory td:nth-child(1) { width: 26%; }
+table.inventory td:nth-child(2) { width: 38%; }
+table.inventory td:nth-child(3) { text-align: right; width: 12%; }
+table.inventory td:nth-child(4) { text-align: right; width: 12%; }
+table.inventory td:nth-child(5) { text-align: right; width: 12%; }
+
+/* table balance */
+
+table.balance th, table.balance td { width: 50%; }
+table.balance td { text-align: right; }
+
+/* aside */
+
+aside h1 { border: none; border-width: 0 0 1px; margin: 0 0 1em; }
+aside h1 { border-color: #999; border-bottom-style: solid; }
+
+/* javascript */
+
+.add, .cut
+{
+	border-width: 1px;
+	display: block;
+	font-size: .8rem;
+	padding: 0.25em 0.5em;	
+	float: left;
+	text-align: center;
+	width: 0.6em;
+}
+
+.add, .cut
+{
+	background-position: 0% 0%;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	border-radius: 0.5em;
+	border-color: #0076A3;
+	color: #FFF;
+	cursor: pointer;
+	font-weight: bold;
+	background-image: -webkit-linear-gradient(#00ADEE 5%, #0078A5 100%);
+	background-color: #9AF;
+	background-repeat: repeat;
+	background-attachment: scroll;
+}
+
+.add { margin: -2.5em 0 0; }
+
+.add:hover { background: #00ADEE; }
+
+.cut { opacity: 0; position: absolute; top: 0; left: -1.5em; }
+.cut { -webkit-transition: opacity 100ms ease0-in; }
+
+tr:hover .cut { opacity: 1; }
+
+#csign{float:left}
+#osign{float:right;}
+
+
+@media print {
+	* { -webkit-print-color-adjust: exact; }
+	html { background: none; padding: 0; }
+	body { box-shadow: none; margin: 0; }
+	span:empty { display: none; }
+	.add, .cut { display: none; }
+  	.central_btn{		display: none;	}
+
+}
+
+@page { margin: 0; }
+
+.central_btn{		text-align:center;	}
+
+.central_btn button {
+     position: relative;
+    margin-top: 80px;
+    font-size: 13px;
+	padding: 10px 25px;
+    border-radius: 3px;
+    color: #000;
+    border: 2px solid #e1e1e1;
+    outline: none;
+    font-family: calibri;
+    font-weight: 400;
+    letter-spacing: 1px;
+    background: #fff;
+    margin-bottom: 40px;
+}
+input#datepicker {
+    width: 100%;
+}
+section.signature p {
+    font-size: 13px;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 1px;
+    line-height: 1.4 !important;
+}
+/*  */
+.ui-datepicker .ui-datepicker-title span.ui-datepicker-month {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+.ui-datepicker .ui-datepicker-title span.ui-datepicker-year {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+th .ui-datepicker-week-end {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    padding-top: 12px;
+}
+.ui-datepicker table th {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+.ui-datepicker td {
+    font-size: 13px;
+    font-family: 'Rubik', sans-serif;
+}
+.ui-datepicker td a.ui-state-default.ui-state-highlight.ui-state-active {
+    background: #ffffff;
+    color: #3F51B5;
+    border: 1px solid #3F51B5;
+    text-align: center;
+}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+    position: absolute;
+    top: -4px;
+    width: 1.8em;
+    height: 1.8em;
+}
+.ui-datepicker table thead tr th:nth-child(2) {
+    background: #F44336;
+    color: #fff;
+}
+.ui-datepicker th {
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    border: 0;
+    border-radius: 0;
+}
+.ui-datepicker table tbody tr td:nth-child(2) a.ui-state-default {
+    border: 1px solid #f44336;
+    text-align: center;
+    background: #f44336;
+    color: #fff;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 1px solid #00BCD4;
+    background: #00BCD4 50% 50% repeat-x;
+    font-weight: normal;
+    color: #ffffff;
+    text-align: center;
+}
+.ui-datepicker table th {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    background: #3c3c3c;
+    color: #fff;
+    border-right: 2px solid #fff;
+}
+.ui-datepicker .ui-datepicker-header {
+    position: relative;
+    padding: .2em 0;
+    border: none;
+    background: none;
+}
+.ui-datepicker table tbody tr a.ui-state-default.ui-state-active {
+    background: #fff !important;
+    color: #00bcd4 !important;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+    border: none;
+    background: none;
+    font-weight: normal;
+    color: #FFC107;
+}

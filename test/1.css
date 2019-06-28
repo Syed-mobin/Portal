@@ -1,0 +1,154 @@
+
+
+/*
+ * Content Wrapper - contains the main content
+ */
+.content-wrapper
+{
+  -webkit-transition: -webkit-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+  -moz-transition: -moz-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+  -o-transition: -o-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+  margin-left: 230px;
+  z-index: 820;
+}
+.layout-top-nav .content-wrapper,
+.layout-top-nav {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  .content-wrapper
+  {
+    margin-left: 0;
+  }
+}
+
+
+
+
+
+.inner-head>.breadcrumb {
+    float: right;
+    background: transparent;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    padding: 7px 5px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    border-radius: 2px;
+}
+
+.inner-head>.breadcrumb>li>a {
+    color: #444;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.inner-head>.breadcrumb>li>a>.fa,
+.inner-head>.breadcrumb>li>a>.glyphicon,
+.inner-head>.breadcrumb>li>a>.ion {
+    margin-right: 5px;
+}
+
+.inner-head>.breadcrumb>li+li:before {
+    content: '>\00a0';
+}
+
+@media (max-width: 991px) {
+    .inner-head>.breadcrumb {
+        position: relative;
+        margin-top: 5px;
+        top: 0;
+        right: 0;
+        float: none;
+        background: #d2d6de;
+        padding-left: 10px;
+    }
+
+    .inner-head>.breadcrumb li:before {
+        color: #97a0b3;
+    }
+}
+
+/* Nav bars Heading, logo  Color Links */
+a {
+  color: #fd0ac9;
+}
+a:hover,
+a:active,
+a:focus {
+  outline: none;
+  text-decoration: none;
+  color: #c1d272;
+}
+
+
+
+
+
+
+
+
+
+/*
+ * Component: Table
+ * ----------------
+ */
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  border-top: 1px solid #f4f4f4;
+}
+.table > thead > tr > th {
+  border-bottom: 2px solid #f4f4f4;
+}
+.table tr td .progress {
+  margin-top: 5px;
+}
+.table-bordered {
+  border: 1px solid #f4f4f4;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border: 1px solid #f4f4f4;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+  border-bottom-width: 2px;
+}
+.table.no-border,
+.table.no-border td,
+.table.no-border th {
+  border: 0;
+}
+/* .text-center in tables */
+table.text-center,
+table.text-center td,
+table.text-center th {
+  text-align: center;
+}
+.table.align th {
+  text-align: left;
+}
+.table.align td {
+  text-align: right;
+}
+/*
+ * Component: Label
+ * ----------------
+ */
+.label-default {
+  background-color: #d2d6de;
+  color: #444;
+}
+
+

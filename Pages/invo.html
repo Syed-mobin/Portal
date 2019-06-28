@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>home page</title>
+    <meta charset="utf-8">
+
+    <!-- BS4 & FONT -->
+    <link rel="stylesheet" href="../assets/libs/MyBootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/libs/fontawesome-5.8.2/css/all.min.css">
+    <script src="../assets/libs/MyBootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/libs/fontawesome-5.8.2/js/all.min.js"></script>
+    <script src="js/invo.js"></script>
+    <!-- ======================= -->
+    <!-- Header & sidebar Jquery -->
+    <!-- ======================= -->
+
+</head>
+
+<body>
+
+    <!-- Editable table -->
+<div class="card">
+        <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Editable table</h3>
+        <div class="card-body">
+          <div id="table" class="table-editable">
+            <span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success"><i
+                  class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span>
+            <table class="table table-bordered table-responsive-md table-striped text-center">
+              <thead>
+                <tr>
+                  <th class="text-center">Item</th>
+                  <th class="text-center">Description</th>
+                  <th class="text-center">HSN</th>
+                  <th class="text-center">Rate </th>
+                  <th class="text-center">Quantity</th>
+                  <th class="text-center">Price</th>
+                  <th class="text-center">Remove</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="pt-3-half" contenteditable="true">Product</td>
+                  <td class="pt-3-half" contenteditable="true">description</td>
+                  <td class="pt-3-half" contenteditable="true">code</td>
+                  <td class="pt-3-half" contenteditable="true">0.00</td>
+                  <td class="pt-3-half" contenteditable="true">0.00</td>
+                  <td class="pt-3-half" contenteditable="true">0.00</td>
+                  <td><span class="table-remove"><button type="button" class="btn btn-danger btn-rounded btn-sm my-0"> 
+                      <i class="fa fa-trash" aria-hidden="true"></i></button></span>
+                  </td>
+                </tr>
+                <!-- This is our clonable table line -->
+             
+            
+                <!-- This is our clonable table line -->
+                <tr class="hide">
+                        <td class="pt-3-half" contenteditable="true">Product</td>
+                        <td class="pt-3-half" contenteditable="true">description</td>
+                        <td class="pt-3-half" contenteditable="true">code</td>
+                        <td class="pt-3-half" contenteditable="true">0.00</td>
+                        <td class="pt-3-half" contenteditable="true">0.00</td>
+                        <td class="pt-3-half" contenteditable="true">0.00</td>
+                        <td><span class="table-remove"><button type="button" class="btn btn-danger btn-rounded btn-sm my-0"> 
+                            <i class="fa fa-trash" aria-hidden="true"></i></button></span>
+                        </td>
+                      </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Editable table -->
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <header><h1>Invoice</h1></header>
+    
+    <table class="meta">
+        <tr>
+            <th><span>Invoice #</span></th>
+            <td id="time"></td>
+        </tr>
+        
+        <tr id="daterow">
+        <th><span class="date" id="date">Date</span></th>
+        <td><span contenteditable=""><input type="date" id="theDate"></span></td>
+        </tr>																			
+        
+        <tr>
+            <th><span>Amount Due</span></th>
+            <td><span id="prefix" contenteditable>&#8377;</span><span>0.00</span></td>
+        </tr>
+
+	</table>
+      <br>
+
+    <div class="container">
+     <div class="row ">
+      <div class="col-md-12">
+         -->
+        <!-- invoice description -->
+        <!-- <table class="inventory table table-responsive table-hover col-md-12" id="tab_logic">
+            <thead>
+                <tr>
+                    <th class="col-md-1 "> # </th>
+                    <th class="col-md-2 "> Product </th>
+                    <th class="col-md-4 "> Description </th>
+                    <th class="col-md-2 "> Rate </th>
+                    <th class="col-md-1 "> Qty </th>
+                    <th class="col-md-2 "> Price </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr> 
+                <td><span>1</span></td>
+                <td><input type="text" name="product[]" placeholder="Enter Product Name" class="form-control" /></td>
+                <td><input type="text" name="description[]" placeholder="Product Description" class="form-control" /></td>
+                <td><input type="number" name="rate[]" placeholder="Enter Unit Price" class="form-control price" step="0" min="0" /></td>
+                <td><input type="number" name="qty[]" placeholder="Enter Qty" class="form-control qty" step="0.00" min="0" /></td>
+                <td><input type="number" name="price[]" placeholder="0.00" class="form-control total" readonly /></td>
+                </tr>
+            </tbody>
+        </table>             -->
+
+
+        <!-- invoice amount sum -->
+        <!-- <table class="balance float-right table-hover" id="tab_logic_total">
+            <tr>
+            <th><span>Total</span></th>
+            <td><span>&#8377;</span><span>0.00</span></td>
+            </tr>
+            <tr>
+            <th><span>GST&nbsp;</span><span contenteditable>18</span>%            </th>
+            <td><span>&#8377;</span>
+            <span>0.00</span></td>
+            </tr>
+            <tr>
+            <th><span>Amount Paid</span></th>
+            <td><span>&#8377;</span><span>0.00</span></td>
+            </tr>
+            <tr>
+            <th><span>Packing</span></th>
+            <td><span>&#8377;</span><span>0.00</span></td>
+            </tr>
+            <tr>
+            <th><span>Balance Due</span></th>
+            <td><span>&#8377;</span><span>0.00</span></td>
+            </tr>
+        </table> -->
+
+        <!-- Stamp section -->
+        <!-- <section class="signature">
+            <div>
+            <div id="csign">		Client Signature</div>
+            <div id="osign">		Owner Signature</div>
+            </div>
+        </section>
+         -->
+        <!-- hardcopy buttton -->
+        <!-- <aside class="central_btn">
+            <button onclick="myFunction()" style="cursor:pointer">	<i class="fa fa-print" aria-hidden="FALSE"></i> Print Document	</button> 
+            <button id="cmd"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Save PDF</button>
+        </aside>
+        
+      </div>      
+     </div>
+    </div>
+
+
+
+    <script>
+            (function () {
+                function checkTime(i) {
+                    return (i < 10) ? "0" + i : i;
+                }
+                function startTime() {
+                    var times = new Date(),
+                    hh = checkTime(times.getHours()),
+                    mm = checkTime(times.getMinutes()),
+                    ss = checkTime(times.getSeconds()),
+                    yy = checkTime(times.getFullYear().toString(10).substring(2, 4)),
+                    MM = checkTime(times.getMonth() + 1),
+                    dd = checkTime(times.getDate());
+                    document.getElementById('time').innerHTML = yy + "" + MM + "" + dd + "" + hh + "" + mm + "" + ss ;
+                    t = setTimeout(function () {
+                        startTime1()
+                    },
+                    50);
+                }
+                startTime();
+            })();
+            
+            var date = new Date();
+            var day = date.getDate();
+            var month = date.getMonth() + 1;
+            var year = date.getFullYear();
+            if (month < 10) month = "0" + month;
+            if (day < 10) day = "0" + day;
+            var today = year + "-" + month + "-" + day;
+            document.getElementById('theDate').value = today;
+    </script>
+
+
+
+</body>
+</html>
+
+ -->

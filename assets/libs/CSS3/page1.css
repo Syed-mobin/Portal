@@ -1,0 +1,10 @@
+/* Font Awesome Icon Linear gredient style by Ali Mian */
+.fa {
+    font-size: 35px;
+    color:#ddd;
+    display: block;
+    background: -webkit-linear-gradient( #ddd, lightskyblue, lightgreen);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  

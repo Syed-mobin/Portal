@@ -1,0 +1,6 @@
+/* table */
+
+/* table { font-size: 60%; table-layout: fixed; width: 100%; }	table item font size */
+table { border-collapse: separate; border-spacing: 1px; }  /*space between table rows*/
+th, td { border-width: .1px; padding: 0.5em; position: relative; text-align: left; }	/*table row bodder*/
+th, td { border-radius: 0.2em; border-style: solid; }
